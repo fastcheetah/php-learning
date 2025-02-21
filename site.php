@@ -18,5 +18,13 @@
         echo "He really liked the name $characterName</br>";
         echo "But didnt like being $characterAge</br>";
         ?>
+        <?php 
+        $phrase = "To be or not to be";
+        $age = 30;
+        $gpa = 30.3;
+        $isMale = "very fat";
+        echo "<P>  Maduka is a $isMale person </P>";
+        $isMale = true;
+        ?>
 </body>
 </html>
