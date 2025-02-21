@@ -20,11 +20,21 @@
         ?>
         <?php 
         $phrase = "To be or not to be";
+        $sentence = "This is a sentence";
         $age = 30;
         $gpa = 30.3;
-        $isMale = "very fat";
-        echo "<P>  Maduka is a $isMale person </P>";
+        $isMale = false;
         $isMale = true;
+        ?>
+        <?php
+        $phrase = "Graceland College";
+        echo strlen($phrase);
+        echo $phrase[0];
+        echo strtolower($phrase);
+        echo strtoupper($phrase);
+        echo "Kelvin"[0];
+         echo str_replace("Kelvin", "John", $phrase);//replaces kelvin with john in the variable phrase
+        echo substr($phrase, 8, 3);//prints out the word college
         ?>
 </body>
 </html>
