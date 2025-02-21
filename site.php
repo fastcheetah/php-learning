@@ -34,7 +34,21 @@
         echo strtoupper($phrase);
         echo "Kelvin"[0];
          echo str_replace("Kelvin", "John", $phrase);//replaces kelvin with john in the variable phrase
-        echo substr($phrase, 8, 3);//prints out the word college
+        echo substr($phrase, 8, 3);//8 is index we grab the substring from and 3 is the number of characters we want to grab
+        ?>
+        <?php
+        echo 40 % 60;//divides and givves the remainder
+        $num = 20;
+        $num += 25;
+        echo $num++;
+        echo abs(-100);
+        echo pow(2, 4);//2 to the power of 4
+        echo sqrt(144);//square root
+        echo max(2, 10);// compares and gives the maximum number
+        echo min(2, 10);// compares and gives the minimum number
+        echo round(3.7);//rounds off to the nearest whole number
+        echo ceil(3.3);//rounds off to the next whole number no matter what
+        echo floor(3.9);//rounds off to the previous whole number no matter what
         ?>
 </body>
 </html>
