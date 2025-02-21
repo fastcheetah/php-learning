@@ -10,6 +10,13 @@
         echo "<h1> Kelvin's Site</h1>";
         echo "<hr>";
         echo "<p> This is my site with php</p>";
+
+        $characterName = "John";
+        $characterAge = 35;
+        echo "There was once a man named $characterName </br>";
+        echo "He was $characterAge years old<br>";
+        echo "He really liked the name $characterName</br>";
+        echo "But didnt like being $characterAge</br>";
         ?>
 </body>
 </html>
