@@ -6,26 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-        echo "<h1> Kelvin's Site</h1>";
-        echo "<hr>";
-        echo "<p> This is my site with php</p>";
 
-        $characterName = "John";
-        $characterAge = 35;
-        echo "There was once a man named $characterName </br>";
-        echo "He was $characterAge years old<br>";
-        echo "He really liked the name $characterName</br>";
-        echo "But didnt like being $characterAge</br>";
-        ?>
-        <?php 
-        $phrase = "To be or not to be";
-        $sentence = "This is a sentence";
-        $age = 30;
-        $gpa = 30.3;
-        $isMale = false;
-        $isMale = true;
-        ?>
+   
         <?php
         $phrase = "Graceland College";
         echo strlen($phrase);
@@ -50,5 +32,18 @@
         echo ceil(3.3);//rounds off to the next whole number no matter what
         echo floor(3.9);//rounds off to the previous whole number no matter what
         ?>
+     
+        <form action = "site.php" method = "get">
+            Name: <input type = "text" name = "name" placeholder = "Enter your name">
+            <br>
+            Age: <input type = "number" name = "age" placeholder = "Enter your age">
+            <input type = "submit">
+            <br>
+    </form>
+            Your name is: <?php echo $_GET["name"]?>
+            <br>
+            Your age is: <?php echo $_GET["age"]?>
+
+            
 </body>
 </html>
