@@ -75,5 +75,9 @@
             $fruits = $_POST["fruits"];
             echo $fruits[0];
             ?>
+            <?php 
+            $grades = array("Jim"=>"A+", "Pam"=>"B-", "Oscar"=>"C+");
+            echo $grades["Jim"];
+            ?>
 </body>
 </html>
