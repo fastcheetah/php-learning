@@ -74,10 +74,15 @@
             <?php 
             $fruits = $_POST["fruits"];
             echo $fruits[0];
-            ?>
+            ?> 
+            <form action="site.php" method = "post"></form>
+            <input type="text" name="student">
+            <input type="submit">
             <?php 
             $grades = array("Jim"=>"A+", "Pam"=>"B-", "Oscar"=>"C+");
             echo $grades["Jim"];
+            echo count($grades);
+            echo $grades[$_POST["student"]];
             ?>
 </body>
 </html>
