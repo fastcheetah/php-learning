@@ -43,19 +43,24 @@
             <?php 
             echo $_GET["num1"] + $_GET["num2"];
             ?>
-            <form action = "site.php" method = "get">
-                Color:  <input type="text" name="color"> <br>
-                Plural Noun:  <input type="text" name="pluralnoun"> <br>
-                Celebrity:  <input type="text" name="celebrity"> <br>
-             <input type="submit" >
-             <br>
-            <?php 
-            $color = $_GET["color"];
-            $pluralnoun = $_GET["pluralnoun"]; 
-            $celebrity = $_GET["celebrity"];
-            echo "Roses are $color <br>";
-            echo "$pluralNoun are killed <br>";
-            echo "I love $celebrity <br>";
-            ?>
+         
+         <form action="site.php" method = "post">
+            Name: <input type="text" name="name"><br>
+            <input type="submit">
+         </form>
+         <?php 
+          echo $_POST["name"];
+         ?>
+
+         <!-- arrays -->
+          <?php 
+            $friends = array("Kevin", "Karen", "Oscar", "Jim");
+            echo $friends[0];
+            $friends[0] = "Dwight";
+            echo $friends[0];
+            $friends[4] = "Angela";
+            echo $friends[4];
+            echo count($friends);
+          ?>
 </body>
 </html>
