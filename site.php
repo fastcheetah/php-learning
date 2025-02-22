@@ -62,5 +62,18 @@
             echo $friends[4];
             echo count($friends);
           ?>
+
+          <form action="site.php" method="post">
+            <input type="checkbox" name="fruits[]" value="apples">Apples<br>
+            <input type="checkbox" name="fruits[]" value="oranges">Oranges<br>
+            <input type="checkbox" name="fruits[]" value="pears">Pears<br>
+            <input type="checkbox" name="fruits[]" value="bananas">Bananas<br>
+            <input type="submit">
+            </form>
+
+            <?php 
+            $fruits = $_POST["fruits"];
+            echo $fruits[0];
+            ?>
 </body>
 </html>
