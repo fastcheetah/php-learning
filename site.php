@@ -34,16 +34,14 @@
         ?>
      
         <form action = "site.php" method = "get">
-            Name: <input type = "text" name = "name" placeholder = "Enter your name">
-            <br>
-            Age: <input type = "number" name = "age" placeholder = "Enter your age">
-            <input type = "submit">
-            <br>
-    </form>
-            Your name is: <?php echo $_GET["name"]?>
-            <br>
-            Your age is: <?php echo $_GET["age"]?>
-
-            
+             <input type="number" name="num1">
+             <br>
+            <input type="number" name="num2">
+       <input type="submit">
+       </form>
+         Answer:
+            <?php 
+            echo $_GET["num1"] + $_GET["num2"];
+            ?>
 </body>
 </html>
