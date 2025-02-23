@@ -87,11 +87,12 @@
             ?>
 
             <?php 
-                  function sayHiI($name){
-                      echo "Hello $name";
-                  }
-                  sayHiI("Mike");
+            function cube($num){
+                return $num * $num * $num;
+            }
+            echo cube(4);
             ?>
+           
             
 </body>
 </html>
