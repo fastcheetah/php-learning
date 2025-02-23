@@ -85,5 +85,13 @@
             echo count($grades);
             echo $grades[$_POST["student"]];
             ?>
+
+            <?php 
+                  function sayHiI($name){
+                      echo "Hello $name";
+                  }
+                  sayHiI("Mike");
+            ?>
+            
 </body>
 </html>
