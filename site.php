@@ -92,7 +92,14 @@
             }
             echo cube(4);
             ?>
-           
+           <?php 
+           $isMale = true;
+           if($isMale){
+            echo "You are male";
+           }else{
+            echo "You are female";
+           }
+           ?>
             
 </body>
 </html>
