@@ -169,7 +169,7 @@ switch($grade){
 <!-- be careful when incrementing because of infinite loop -->
 <?php 
 $index = 1;
-while($index <= 5){
+{
     echo "$index <br>";
     $index++;
 }
