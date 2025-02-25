@@ -175,5 +175,9 @@ while($index <= 5){
 }
 
 ?>
+<?php 
+$killing = "Killing is not better than torturing and truamatising only if your the one doing it but dont forget if you point a blade at others dont be sad when the same will be done to you"
+?>
+
 </body>
 </html>
