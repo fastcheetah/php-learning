@@ -168,12 +168,19 @@ switch($grade){
 ?>
 <!-- be careful when incrementing because of infinite loop -->
 <?php 
+$luckyNums = array(4, 8, 14, 16, 23, 42);
+for($i = 0; $i < count($luckyNums); $i++){
+    echo "$luckyNums[$i] <br>";
+};
 $index = 1;
 while($index <= 5){
     echo "$index <br>";
     $index++;
 }
+for($i = 1; $i <= 5; $i++){
+    echo "$i <br>";
 
+}
 ?>
 </body>
 </html>
