@@ -7,7 +7,8 @@
 </head>
 <body>
 
-   
+<?php include "header.html"?>
+
         <?php
         $phrase = "Graceland College";
         echo strlen($phrase);
@@ -182,5 +183,7 @@ for($i = 1; $i <= 5; $i++){
 
 }
 ?>
+<?php include "footer.html"?>
+
 </body>
 </html>
