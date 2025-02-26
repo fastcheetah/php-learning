@@ -210,15 +210,9 @@ class Book{
 
 }
 $book1 = new Book("Harry Potter", "JK Rowling", 400);
-$book1->title = "Harry Potter";
-$book1->author = "JK Rowling";
-$book1->pages = 400;
-
-
-$book2 = new Book("Lord of the Rings");
-$book2->title = "Lord of the Rings";
-$book2->author = "Tolkein"; 
-$book2->pages = 700;
+$book2 = new Book("Lord of the Rings","Tolkein", 700);
+echo $book1->title;
+echo $book2->title;
 
 ?>
 
