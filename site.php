@@ -189,6 +189,9 @@ $author = "Kelvin";
 $wordCount = 400;
 include "article-header.php";
 ?>
+<?php include "useful-tools.php";
+sayHi("mike") 
+?>
 <?php include "footer.html"?>
 
 </body>
