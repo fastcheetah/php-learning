@@ -183,6 +183,12 @@ for($i = 1; $i <= 5; $i++){
 
 }
 ?>
+<?php 
+$title = "My first post";
+$author = "Kelvin";
+$wordCount = 400;
+include "article-header.php";
+?>
 <?php include "footer.html"?>
 
 </body>
