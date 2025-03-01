@@ -274,6 +274,17 @@ for ($i = 0; $i < count($girls); $i++) {
 }
 ?>
 
+<?php
+$boys = ["King", "Hillary", "Kelvin", "Joshua", "Chika"];
+$i = 0;
+
+while ($i < count($girls)) {
+    echo "Girl " . ($i + 1) . ": " . $girls[$i] . "<br>";
+    $i++;
+}
+?>
+
+
 
 </body>
 </html>
