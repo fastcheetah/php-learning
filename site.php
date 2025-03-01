@@ -278,8 +278,8 @@ for ($i = 0; $i < count($girls); $i++) {
 $boys = ["King", "Hillary", "Kelvin", "Joshua", "Chika"];
 $i = 0;
 
-while ($i < count($girls)) {
-    echo "Girl " . ($i + 1) . ": " . $girls[$i] . "<br>";
+while ($i < count($boys)) {
+    echo "Boys: $boys[$i] <br>";
     $i++;
 }
 ?>
