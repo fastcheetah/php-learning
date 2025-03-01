@@ -265,5 +265,15 @@ switch ($day) {
 }
 ?>
 
+<?php
+$girls = ["Deborah", "Ketandu", "Catherine", "Gabriella", "Christine"];//javascript syntax can work here nice
+
+for ($i = 0; $i < count($girls); $i++) {
+    
+    echo " Girls:$girls[$i] <br>";
+}
+?>
+
+
 </body>
 </html>
