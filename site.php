@@ -237,6 +237,33 @@ $myCar = new Car("Toyota", "Corolla");
 $myCar->displayCar();
 ?>
 
+<?php
+$day = "Monday";
+
+switch ($day) {
+    case "Monday":
+        echo "Start of the workweek!";
+        break;
+    case "Tuesday":
+        echo "Second day of the week.";
+        break;
+    case "Wednesday":
+        echo "Midweek already!";
+        break;
+    case "Thursday":
+        echo "One more day to Friday!";
+        break;
+    case "Friday":
+        echo "Weekend is almost here!";
+        break;
+    case "Saturday":
+    case "Sunday":
+        echo "It's the weekend! Time to relax!";
+        break;
+    default:
+        echo "Invalid day.";
+}
+?>
 
 </body>
 </html>
