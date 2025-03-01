@@ -216,5 +216,27 @@ echo $book2->title;
 
 ?>
 
+<?php
+class Car {
+    public $brand;
+    public $model;
+    
+    
+    public function __construct($brand, $model) {
+        $this->brand = $brand;
+        $this->model = $model;
+    }
+
+    public function displayCar() {
+        echo "This car is a $this->brand $this->model.";
+    }
+}
+
+
+$myCar = new Car("Toyota", "Corolla");
+$myCar->displayCar();
+?>
+
+
 </body>
 </html>
