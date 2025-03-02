@@ -247,17 +247,21 @@ echo "Pam has honors: " . ($student2->hasHonors() ? "Yes" : "No") . "<br>";
 <?php 
 class Movie{
     public $title;
-    public $rating;
+    private $rating;
 
     function __construct($title,$rating){
         $this->title = $title;
         $this->rating = $rating;
     }
+    //rating cant be changed outside this movie class
+    function getRating(){
+        return this->rating;
+    }
 }
 $avengers = new Movie("Avengers","PG-13");
 //G, PG, PG-13, R, NR
 
-echo $avengers -> rating;
+echo $avengers -> getRating();
 ?>
 
 
