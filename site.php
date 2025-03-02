@@ -272,6 +272,28 @@ $avengers->setRating("Cat");
 
 echo $avengers->getRating();
 ?>
+<?php 
+class Chef{
+    function makeChicken(){
+        echo"The chef makes chicken <br>";
+    }
+    function makeSalad(){
+        echo "The chef makes salad <br>";
+    }
+    function makeSpecialDish(){
+        echo "The chef makes bbq ribs <br>";
+    }
+}
+class ItalianChef extends Chef{
+    function makePasta(){
+        echo"The chef makes pasta";
+    }
+}
+$chef = new Chef();
+$chef->makeChicken();
+$italianchef = new ItalianChef();
+$italianchef->makePasta();
+?>
 
 
 </body>
