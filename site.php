@@ -215,74 +215,35 @@ echo $book1->title;
 echo $book2->title;
 
 ?>
+<?php 
+class Student {
+    var $name;
+    var $major;
+    var $gpa;
 
-<?php
-class Car {
-    public $brand;
-    public $model;
-    
-    
-    public function __construct($brand, $model) {
-        $this->brand = $brand;
-        $this->model = $model;
+    function __construct($name, $major, $gpa){
+        $this->name = $name;
+        $this->major = $major;
+        $this->gpa = $gpa;
     }
 
-    public function displayCar() {
-        echo "This car is a $this->brand $this->model.";
+    function hasHonors(){
+        if($this->gpa >= 3.5){
+            return true; // Return a boolean value instead of "true"
+        }
+        return false;
     }
 }
 
+$student1 = new Student("Jim", "Business", 2.8);
+$student2 = new Student("Pam", "Art", 3.6);
 
-$myCar = new Car("Toyota", "Corolla");
-$myCar->displayCar();
+// Checking if the students have honors
+echo "Jim has honors: " . ($student1->hasHonors() ? "Yes" : "No") . "<br>";
+echo "Pam has honors: " . ($student2->hasHonors() ? "Yes" : "No") . "<br>";
+
 ?>
 
-<?php
-$day = "Monday";
-
-switch ($day) {
-    case "Monday":
-        echo "Start of the workweek!";
-        break;
-    case "Tuesday":
-        echo "Second day of the week.";
-        break;
-    case "Wednesday":
-        echo "Midweek already!";
-        break;
-    case "Thursday":
-        echo "One more day to Friday!";
-        break;
-    case "Friday":
-        echo "Weekend is almost here!";
-        break;
-    case "Saturday":
-    case "Sunday":
-        echo "It's the weekend! Time to relax!";
-        break;
-    default:
-        echo "Invalid day.";
-}
-?>
-
-<?php
-$girls = ["Deborah", "Ketandu", "Catherine", "Gabriella", "Christine"];//javascript syntax can work here nice
-
-for ($i = 0; $i < count($girls); $i++) {
-    
-    echo " Girls:$girls[$i] <br>";
-}
-?>
-
-<?php
-$boys = ["King", "Hillary", "Kelvin", "Joshua", "Chika"];
-$i = 0;
-
-while ($i < count($boys)) {
-    echo "Boys: $boys[$i] <br>";
-    $i++;
-}
-?>
 
 
 
