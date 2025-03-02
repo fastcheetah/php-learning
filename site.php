@@ -257,6 +257,9 @@ class Movie{
     function getRating(){
         return this->rating;
     }
+    function setRating($rating){
+        $this->rating = $rating;
+    }
 }
 $avengers = new Movie("Avengers","PG-13");
 //G, PG, PG-13, R, NR
