@@ -251,7 +251,7 @@ class Movie{
 
     function __construct($title,$rating){
         $this->title = $title;
-        $this->rating = $rating;
+        $this->setRating($rating);
     }
     //rating cant be changed outside this movie class
     function getRating(){
