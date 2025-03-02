@@ -255,16 +255,22 @@ class Movie{
     }
     //rating cant be changed outside this movie class
     function getRating(){
-        return this->rating;
+        return $this->rating;
     }
     function setRating($rating){
-        $this->rating = $rating;
+        if($rating == "G" || $rating == "PG" || $rating == "PG13" || $rating == "R" || $rating == "NR"){
+            $this->rating = $rating;
+        }else{
+            $this->rating = "NR";
+        }
+        
     }
 }
 $avengers = new Movie("Avengers","PG-13");
 //G, PG, PG-13, R, NR
+$avengers->setRating("Cat");
 
-echo $avengers -> getRating();
+echo $avengers->getRating();
 ?>
 
 
