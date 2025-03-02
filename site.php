@@ -229,9 +229,9 @@ class Student {
 
     function hasHonors(){
         if($this->gpa >= 3.5){
-            return true; // Return a boolean value instead of "true"
+            return "true"; // Return a boolean value instead of "true"
         }
-        return false;
+        return "false";
     }
 }
 
@@ -244,7 +244,21 @@ echo "Pam has honors: " . ($student2->hasHonors() ? "Yes" : "No") . "<br>";
 
 ?>
 
+<?php 
+class Movie{
+    public $title;
+    public $rating;
 
+    function __construct($title,$rating){
+        $this->title = $title;
+        $this->rating = $rating;
+    }
+}
+$avengers = new Movie("Avengers","PG-13");
+//G, PG, PG-13, R, NR
+
+echo $avengers -> rating;
+?>
 
 
 </body>
