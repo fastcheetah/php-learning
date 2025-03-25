@@ -8,10 +8,13 @@
 </head>
 <body>
     <?php 
+$firstName = "Kelvin";
+$lastName = "Mario";
+//concatenation
+echo  $firstName . $lastName;
+
 echo "Hello page";
-//CONSTANTS
-define("GREETING", "Hello you!");
-echo GREETING;
+
 ?>
 </body>
 </html>
