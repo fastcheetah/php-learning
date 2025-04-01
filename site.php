@@ -270,7 +270,7 @@ $avengers = new Movie("Avengers","PG-13");
 //G, PG, PG-13, R, NR
 $avengers->setRating("Cat");
 
-echo $avengers->getRating();
+echo $avengers->getRating();php
 ?>
 <?php 
 class Chef{
